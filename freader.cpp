@@ -135,14 +135,11 @@ int main(int argc, char* argv[]){
 	x = argc;
 	//check if arguments are more than 4
 	//that means that we dont need less because 
-	//usage: ./a.out (-f/-p) filename.txt (word/<encoded/decoded>)
 	if(argc < 4) {
 		cout << "Not Enough arguments" << endl;
 		exit(1);}
 	if(((argc-1) % 3) != 0 ){
-	cout << "Bad usage!" << endl;
-	cout << "usage: ./a.out -f filename.txt word" << endl;
-	cout << "usage: ./a.out -p filename.txt <decoded/encoded>" <<endl; 
+	cout << "Bad usage!" << endl; 
 	exit(1);
 	}
 	//we check arguments per 3 
@@ -154,14 +151,10 @@ int main(int argc, char* argv[]){
 	//call parameter function if parameter is ok. its ok
 	//else it terminate the program
 	check_paramaters(param,file,word,x);
-	//if parameter is "-f" we write to file 
-	//and we call the write function
 	if(param == "-f"){	
 		write_file(param,file,word);
 		sort_file(file,word);
 		}
-	//if parameter is "-p" we print the file 
-	//and call the print function
 	if(param == "-p"){
 		print_file(file,word);
 	}
