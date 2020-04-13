@@ -148,8 +148,7 @@ int main(int argc, char* argv[]){
 	file = argv[i+1];
 	word = argv[i+2];
 	i=i+2;
-	//call parameter function if parameter is ok. its ok
-	//else it terminate the program
+	//call parameter function if parameter is ok.
 	check_paramaters(param,file,word,x);
 	if(param == "-f"){	
 		write_file(param,file,word);
