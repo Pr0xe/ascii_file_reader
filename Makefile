@@ -1,6 +1,6 @@
 CXX 		= g++
 CC 		= $(CXX)
-CXXFLAGS	= -g -Wall
+CXXFLAGS	= --std=c++14
 all:
 	$(CC) freader.cpp $(CXXFLAGS) -o reader
 	
