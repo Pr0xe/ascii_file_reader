@@ -144,10 +144,10 @@ int main(int argc, char* argv[]){
 	}
 	//we check arguments per 3 
 	for(int i=1;i < argc-1;++i){
-	param = argv[i];
-	file = argv[i+1];
-	word = argv[i+2];
-	i=i+2;
+		param = argv[i];
+		file = argv[i+1];
+		word = argv[i+2];
+		i=i+2;
 	//call parameter function if parameter is ok.
 	check_paramaters(param,file,word,x);
 	if(param == "-f"){	
