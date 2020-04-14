@@ -19,4 +19,4 @@ $ ./reader -f file.txt word
 or
 $ ./reader –f file.txt word1 –f file.txt word2 –p file.txt decoded
 or
-$ ./reader –f file.txt word1 –p file.txt decoded file.txt
+$ ./reader –f file.txt word1 –p file.txt decoded
