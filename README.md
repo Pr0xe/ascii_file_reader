@@ -2,6 +2,7 @@
 
 ```sh
 $ git clone https://github.com/Pr0xe/ascii_file_reader.git
+$ cd ascii_file_reader
 $ make 
 ```
 ### usage 
